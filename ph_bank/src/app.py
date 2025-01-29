@@ -75,8 +75,10 @@ def create_app(test_config=None):
 
     # register blueprints
     from src.controllers import user
+    from src.controllers import post
 
     app.register_blueprint(user.app)
+    app.register_blueprint(post.app)
    
 
 

@@ -61,6 +61,7 @@ def update_user(user_id):
         "username": user.username
     }
 
+
 @app.route("/<int:user_id>", methods=["DELETE"])
 def delete_user(user_id):
     user = db.get_or_404(User, user_id)
